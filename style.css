@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:wght@500&family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(/images/bg.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+.heading {
+    font-size: 70px;
+    color: #fff;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    width: 70%;
+}
+
+.cards-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    width: 280px;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.image-top {
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0%, 100% 78%, 0% 100%);
+}
+
+.profile-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 10px solid #eee;
+    margin-top: -100px;
+    z-index: 10;
+}
+
+.fullname {
+    font-family: 'Dancing Script', cursive;
+    margin: 10px;
+}
+
+.job {
+    font-family: 'Varela Round', sans-serif;
+    margin: 10px;
+}
+
+.about-me {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 10px;
+    width: 90%;
+    text-align: center;
+}
+
+.card button {
+    background: tomato;
+    margin: 10px;
+    width: 150px;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.social-icons {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+    border-top: 2px solid #d3d3d3;
+    padding-top: 15px;
+
+}
