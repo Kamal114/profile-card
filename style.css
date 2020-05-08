@@ -48,6 +48,33 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    transition: all 1s;
+}
+
+.card:nth-child(1) {
+    animation: cardAnim 1s 3s backwards;
+}
+
+.card:nth-child(2) {
+    animation: cardAnim 1s 3.5s backwards;
+}
+
+.card:nth-child(3) {
+    animation: cardAnim 1s 4s backwards;
+}
+
+@keyframes cardAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .image-top {
@@ -91,6 +118,92 @@
     border-radius: 20px;
     color: #eee;
     cursor: pointer;
+}
+
+@keyframes buttonAnim {
+    0% {
+        transform: scale(1) rotateZ(0deg);
+    }
+
+    5% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    10% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    15% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    20% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    25% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    30% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    35% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    40% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    45% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    50% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    55% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    60% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    70% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    75% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    80% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    85% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    90% {
+        transform: scale(1.2) rotateZ(5deg);
+    }
+
+    95% {
+        transform: scale(1.2) rotateZ(-5deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(0deg);
+    }
+}
+
+.card:hover button {
+    animation: buttonAnim .7s 3s;
 }
 
 .social-icons {
